@@ -1,0 +1,72 @@
+//Colores
+@color-fondo:#333333;
+@colot-textos-1:#FBFEFD;
+@color-textos-2:#7F3DD8;
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-1:'Oswald', sans-serif;
+@font-2:'Lato';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: @color-fondo;
+  color: @colot-textos-1;
+  margin: 2.5%;
+}
+h1,h2,h3,h4,h5{
+  text-transform: uppercase;
+  font-family: @font-1;
+  font-style: normal;
+}
+h1,h2{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+}
+h3,h4,h5{
+  font-weight: 500;
+}
+h3{
+  font-size: 20px;
+  line-height: 30px;
+}
+h4{
+  font-size: 16px;
+  line-height: 24px;
+}
+h5{
+  font-size: 12px;
+  line-height: 18px;
+}
+p{
+  font-family: @font-2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+}
+a{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: @font-1;
+  font-style: normal;
+  color: @colot-textos-1;
+  text-decoration: none;
+}
+
+@media (max-width: 810px) {
+  h1,h2{
+    font-size: 32px;
+    line-height: 47px;
+  }
+} 

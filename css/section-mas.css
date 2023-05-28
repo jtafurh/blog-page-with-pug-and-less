@@ -1,0 +1,10 @@
+.section-mas .card {
+  width: 430px;
+  height: 650px;
+}
+.section-mas .card__tittle {
+  width: 310px;
+}
+.section-mas .card__content {
+  width: 340px;
+}

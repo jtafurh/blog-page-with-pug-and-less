@@ -1,0 +1,43 @@
+.section-mas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__tittle{
+    margin: 30px 0 50px 0;
+    color: @color-textos-2;
+  }
+  &__cards{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around
+  }
+  .card{
+    width: 400px;
+    height: 650px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: @color-textos-2;
+    &__figure{
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      img{
+        height: 100%;
+      }
+    }
+    &__content{
+      padding: 25px;
+    }
+    &__parrafo{
+      margin: 8px 0 16px 0;
+    }
+  }
+}
+@media (max-width: 810px) {
+  .section-mas .card{
+    width: 330px;
+    height: 650px;
+  }
+} 
