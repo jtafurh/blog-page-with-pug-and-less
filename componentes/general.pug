@@ -1,0 +1,21 @@
+mixin card(img, title, parrafo)
+  div.card
+    figure.card__figure
+      img(src="/imgs/"+ img, alt="")
+    div.card__content 
+      h3.card__tittle= title 
+      p.card__parrafo= parrafo 
+      a.card__link(href="") Leer mas
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Blog Games
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="shortcut icon", href="imgs/consola-de-juego.png", type="image/x-icon")
+  body
+    //- Indica que se va incluir un bloque se codigo seguido al head
+    block body
